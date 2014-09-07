@@ -3,6 +3,6 @@
 @interface CDVImgDownloader : CDVPlugin {}
 
 - (void)download:(CDVInvokedUrlCommand*)command;
-- (void)downloadWithData:(CDVInvokedUrlCommand*)command;
+- (void)downloadWithUrl:(CDVInvokedUrlCommand*)command;
 
 @end

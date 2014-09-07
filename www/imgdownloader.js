@@ -6,8 +6,8 @@ ImgDownloader.prototype.download = function(src,onsuccess,onerror){
 	cordova.exec(onsuccess, onerror, "ImgDownloader", "download", [src]);
 };
 
-ImgDownloader.prototype.downloadWithData = function(data,onsuccess,onerror){
-	cordova.exec(onsuccess, onerror, "ImgDownloader", "downloadWithData", [data]);
+ImgDownloader.prototype.downloadWithUrl = function(url,onsuccess,onerror){
+	cordova.exec(onsuccess, onerror, "ImgDownloader", "downloadWithUrl", [url]);
 };
 
 // Register the plugin

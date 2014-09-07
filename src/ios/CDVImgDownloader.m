@@ -26,7 +26,7 @@
 	}];
 }
 
-- (void)downloadWithData:(CDVInvokedUrlCommand*)command {
+- (void)downloadWithUrl:(CDVInvokedUrlCommand*)command {
 	CDVPluginResult *pluginResult = nil;
     NSURL *url = [NSURL URLWithString:[command.arguments objectAtIndex:0]];
 	NSData *args = [NSData dataWithContentsOfURL:url];

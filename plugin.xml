@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.verso.cordova.clipboard"
+    version="0.1.0">
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0" />
+    </engines>
+
+    <name>ImgDownloader</name>
+
+    <description>Download image files or base64 encoded data as image to ios photo gallery</description>
+
+    <author>Wenshung</author>
+
+    <keywords>download,image,image base64 data,photo directory,photos gallery</keywords>
+
+    <license>MIT</license>
+
+    <js-module src="www/imgdownloader.js" name="Clipboard">
+        <clobbers target="cordova.plugins.imgDownloader" />
+    </js-module>
+
+    <!-- iOS -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="ImgDownloader">
+                <param name="ios-package" value="CDVImgDownloader" />
+            </feature>
+        </config-file>
+
+        <header-file src="src/ios/CDVImgDownloader.h" />
+        <source-file src="src/ios/CDVImgDownloader.m" />
+    </platform>
+
+</plugin>

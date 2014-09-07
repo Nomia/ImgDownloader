@@ -1,6 +1,6 @@
 #import <Cordova/CDVPlugin.h>
 
-@interface CDVClipboard : CDVPlugin {}
+@interface CDVImgDownloader : CDVPlugin {}
 
 - (void)download:(CDVInvokedUrlCommand*)command;
 - (void)downloadWithData:(CDVInvokedUrlCommand*)command;

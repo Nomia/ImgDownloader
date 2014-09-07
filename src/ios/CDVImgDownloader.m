@@ -1,4 +1,5 @@
 #import <UIKit/UIKit.h>
+#import <Cordova/CDV.h>
 #import <Cordova/CDVPlugin.h>
 #import <Cordova/CDVPluginResult.h>
 #import "CDVImgDownloader.h"

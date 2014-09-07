@@ -1,20 +1,24 @@
-ImgDownloader
+ImgDownloader(IOS only)
 =============
 
-A phongap plugin that provides the functionality to download image files(from internet or local dataDirectory) to iphone photos gallery.(IOS ONLY)
+A phongap plugin that provides the functionality to download image files(from internet or local dataDirectory) to iphone photos gallery.
 
 Installation:
+===
     phonegap plugin add https://github.com/Nomia/ImgDownloader.git
     
 Interface:
+===
     cordova.plugins.imgDownloader
 
 Methods:
+===
     download(relativeUrl[,onsuccess[,onerror]]) //'relativeUrl' relative to Library/NoCloud  e.g. "/myimage/logo.png"
     
     downloadWithUrl(url[,onsuccess[,onerror]])  //'url' can be any online resource url or dataURI
 
 Examples:
+===
 
 1.download from a url when device is ready
 

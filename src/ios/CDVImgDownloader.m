@@ -9,16 +9,16 @@
 - (void)download:(CDVInvokedUrlCommand*)command {
 	[self.commandDelegate runInBackground:^{
 		NSString     *imgRelativePath   	= [command.arguments objectAtIndex:0]; //relative to dataDirectory => "Library/NoCloud"
-		NSArray *paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
-	    NSString *path = [paths objectAtIndex:0];
+	//	NSArray *paths = NSSearchPathForDirectoriesInDomains(NSLibraryDirectory, NSUserDomainMask, YES);
+	  //  NSString *path = [paths objectAtIndex:0];
 
-	    NSString *noCloud = @"NoCloud";
-	    NSString *noCloudPath = [path stringByAppendingPathComponent:noCloud];
+	 //   NSString *noCloud = @"NoCloud";
+	  //  NSString *noCloudPath = [path stringByAppendingPathComponent:noCloud];
 	    
-	    NSString *imgPath = [noCloudPath stringByAppendingString:imgRelativePath];
+	 //   NSString *imgPath = [noCloudPath stringByAppendingString:imgRelativePath];
 	    
 	    
-	    UIImage *image = [UIImage imageWithContentsOfFile:imgPath];
+	    UIImage *image = [UIImage imageWithContentsOfFile:imgRelativePath];
 	    UIImageWriteToSavedPhotosAlbum(image, self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
 
 		CDVPluginResult* pluginResult = [CDVPluginResult resultWithStatus:CDVCommandStatus_OK messageAsString:imgPath];

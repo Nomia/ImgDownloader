@@ -1,4 +1,4 @@
-ImgDownloader(IOS only)
+ImgageDownloader(IOS only)- Best IOS Downloader 
 =============
 
 A phongap plugin that provides the functionality to download image files(from internet or local dataDirectory) to iphone photos gallery.
